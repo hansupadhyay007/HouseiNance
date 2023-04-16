@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .img {
+    background-image: url('banner.png');
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form h2 {
+    margin-top: 0;
+  }
+  
+  .form input[type="text"],
+  .form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .switch-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .switch-field input[type="radio"] {
+    display: none;
+  }
+  
+  .switch-field label {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .switch-field input[type="radio"]:checked + label {
+    background-color: #4caf50;
+  }
+  
+  .submit {
+    padding: 10px;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
