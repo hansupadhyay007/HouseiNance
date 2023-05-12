@@ -1,4 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+//import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
 
@@ -14,6 +15,7 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+//const database = getDatabase(app);
 const auth = getAuth(app);
 
 const submitButton = document.getElementById("submit");
@@ -82,6 +84,9 @@ submitButton.addEventListener("click", function() {
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
+      //set(ref(database,'users/' + user.uid),{
+        //email: email,
+      //})
       console.log("Success! Welcome back!");
       window.alert("Success! Welcome back!");
       location.href = "../app.html";
