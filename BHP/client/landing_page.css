@@ -1,6 +1,6 @@
     body{
         margin: 0px;
-        background-image: url('https://4kwallpapers.com/images/wallpapers/ios-13-stock-ipados-red-black-background-amoled-hd-2048x1536-799.jpg');
+        background-image: url('assets/landing_page_backgroundimage.jpg');
 
     }
     #main{
@@ -13,8 +13,7 @@
     #box1{
         width: 530px;
         height: 625px;
-        /*background-image: url("https://res.cloudinary.com/davims6ce/image/upload/v1597557707/1_pblr2h.png");*/
-        background-image: url(assets/Screenshot__21_-removebg-preview.png);
+        background-image: url(assets/graph.png);
         background-repeat: no-repeat;
         position: absolute;
         bottom: -100%;
@@ -26,8 +25,7 @@
         position: absolute;
         width: 530px;
         height: 625px;
-        /*background-image: url('https://res.cloudinary.com/davims6ce/image/upload/v1597557706/2_meanqt.png');*/
-        background-image: url(assets/Screenshot__14_-removebg-preview.png);
+        background-image: url(assets/solid.png);
         background-repeat: no-repeat;
         left: 0px;
         z-index: -1;
@@ -138,3 +136,7 @@ a:hover, a:active {
 .na{
     color: yellow;
 }
+.para{
+    font-size: 70px;
+}
+
